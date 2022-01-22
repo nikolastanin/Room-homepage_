@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "styles.css",
+	"sources": [
+		"../scss/styles.scss"
+	],
+	"sourcesContent": [
+		"\r\n  \r\n  body {\r\n    font-family: \"Inter\", sans-serif;\r\n    padding:0;\r\n    margin: 0;\r\n  }\r\n  \r\n  .container {\r\n    display: grid;\r\n    height: 100vh;\r\n    grid-template-columns:  1fr 1fr 1fr;\r\n    grid-template-rows:  1.5fr 1.2fr;\r\n    grid-template-areas:\r\n     \r\n      \" box1 box1  box2 \"\r\n      \" content1 content2 content3\"\r\n      ;\r\n    grid-gap: 0.3rem;\r\n    font-weight: 800;\r\n    //text-transform: uppercase;\r\n    font-size: 12px;\r\n    color: #004d40;\r\n    text-align: center;\r\n  }\r\n  \r\n  nav {\r\n    background: #a7ffeb;\r\n    grid-area: nav;\r\n    \r\n  }\r\n  \r\n  .box1{\r\n    background: #84ffff;\r\n    grid-area: box1;\r\n    \r\n  }\r\n  .box2{\r\n    background: #84ffff;\r\n    grid-area: box2;\r\n   ;\r\n  }\r\n \r\n  \r\n  \r\n  \r\n  #content1 {\r\n    background: #6fffd2;\r\n    grid-area: content1;\r\n   \r\n  }\r\n  \r\n  #content2 {\r\n    background: #64ffda;\r\n    grid-area: content2;\r\n\r\n  }\r\n  \r\n  #content3 {\r\n    background: #73ffba;\r\n    grid-area: content3;\r\n   \r\n  \r\n  }\r\n  \r\n  @media only screen and (max-width: 550px) {\r\n    .container {\r\n      grid-template-columns: 1fr;\r\n      grid-template-rows: 1fr 1fr;\r\n      grid-template-areas:\r\n       \"box1\"\r\n       \"box2\"\r\n       \"content1\"\r\n       \"content2\"\r\n       \"content3\";\r\n    }\r\n  }\r\n  "
+	],
+	"names": [],
+	"mappings": ";AAEE,AAAA,IAAI,CAAC;EACH,WAAW,EAAE,mBAAmB;EAChC,OAAO,EAAC,CAAC;EACT,MAAM,EAAE,CAAC;CACV;;;AAED,AAAA,UAAU,CAAC;EACT,OAAO,EAAE,IAAI;EACb,MAAM,EAAE,KAAK;EACb,qBAAqB,EAAG,WAAW;EACnC,kBAAkB,EAAG,WAAW;EAChC,mBAAmB,EAEjB,kDAEA;EACF,QAAQ,EAAE,MAAM;EAChB,WAAW,EAAE,GAAG;EAEhB,SAAS,EAAE,IAAI;EACf,KAAK,EAAE,OAAO;EACd,UAAU,EAAE,MAAM;CACnB;;;AAED,AAAA,GAAG,CAAC;EACF,UAAU,EAAE,OAAO;EACnB,SAAS,EAAE,GAAG;CAEf;;;AAED,AAAA,KAAK,CAAA;EACH,UAAU,EAAE,OAAO;EACnB,SAAS,EAAE,IAAI;CAEhB;;;AACD,AAAA,KAAK,CAAA;EACH,UAAU,EAAE,OAAO;EACnB,SAAS,EAAE,IAAI;CAEhB;;;AAKD,AAAA,SAAS,CAAC;EACR,UAAU,EAAE,OAAO;EACnB,SAAS,EAAE,QAAQ;CAEpB;;;AAED,AAAA,SAAS,CAAC;EACR,UAAU,EAAE,OAAO;EACnB,SAAS,EAAE,QAAQ;CAEpB;;;AAED,AAAA,SAAS,CAAC;EACR,UAAU,EAAE,OAAO;EACnB,SAAS,EAAE,QAAQ;CAGpB;;AAED,MAAM,MAAM,MAAM,MAAM,SAAS,EAAE,KAAK;;EACtC,AAAA,UAAU,CAAC;IACT,qBAAqB,EAAE,GAAG;IAC1B,kBAAkB,EAAE,OAAO;IAC3B,mBAAmB,EAClB,kDAIU;GACZ"
+}

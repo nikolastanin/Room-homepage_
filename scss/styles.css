@@ -1,0 +1,73 @@
+body {
+  font-family: "Inter", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  height: 100vh;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1.5fr 1.2fr;
+      grid-template-rows: 1.5fr 1.2fr;
+      grid-template-areas: " box1 box1  box2 " " content1 content2 content3";
+  grid-gap: 0.3rem;
+  font-weight: 800;
+  font-size: 12px;
+  color: #004d40;
+  text-align: center;
+}
+
+nav {
+  background: #a7ffeb;
+  grid-area: nav;
+}
+
+.box1 {
+  background: #84ffff;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: box1;
+}
+
+.box2 {
+  background: #84ffff;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: box2;
+}
+
+#content1 {
+  background: #6fffd2;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: content1;
+}
+
+#content2 {
+  background: #64ffda;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: content2;
+}
+
+#content3 {
+  background: #73ffba;
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: content3;
+}
+
+@media only screen and (max-width: 550px) {
+  .container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "box1" "box2" "content1" "content2" "content3";
+  }
+}
+/*# sourceMappingURL=styles.css.map */
