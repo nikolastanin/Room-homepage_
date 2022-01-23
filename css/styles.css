@@ -1,67 +1,17 @@
-/* line 3, F:/NIKOLA_PROJECTS/JavaScript_Projects/Room homepage_/scss/styles.scss */
+/* line 1, F:/NIKOLA_PROJECTS/JavaScript_Projects/Room homepage_/scss/styles.scss */
 body {
-  font-family: "Inter", sans-serif;
-  padding: 0;
-  margin: 0;
+  overflow: hidden;
 }
 
-/* line 9, F:/NIKOLA_PROJECTS/JavaScript_Projects/Room homepage_/scss/styles.scss */
-.container {
-  display: grid;
-  height: 100vh;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1.5fr 1.2fr;
-  grid-template-areas: " box1 box1  box2 " " content1 content2 content3";
-  grid-gap: 0.3rem;
-  font-weight: 800;
-  font-size: 12px;
-  color: #004d40;
-  text-align: center;
+/* line 4, F:/NIKOLA_PROJECTS/JavaScript_Projects/Room homepage_/scss/styles.scss */
+.text {
+  padding: 200px;
 }
 
-/* line 27, F:/NIKOLA_PROJECTS/JavaScript_Projects/Room homepage_/scss/styles.scss */
-nav {
-  background: #a7ffeb;
-  grid-area: nav;
-}
-
-/* line 33, F:/NIKOLA_PROJECTS/JavaScript_Projects/Room homepage_/scss/styles.scss */
-.box1 {
-  background: #84ffff;
-  grid-area: box1;
-}
-
-/* line 38, F:/NIKOLA_PROJECTS/JavaScript_Projects/Room homepage_/scss/styles.scss */
-.box2 {
-  background: #84ffff;
-  grid-area: box2;
-}
-
-/* line 47, F:/NIKOLA_PROJECTS/JavaScript_Projects/Room homepage_/scss/styles.scss */
-#content1 {
-  background: #6fffd2;
-  grid-area: content1;
-}
-
-/* line 53, F:/NIKOLA_PROJECTS/JavaScript_Projects/Room homepage_/scss/styles.scss */
-#content2 {
-  background: #64ffda;
-  grid-area: content2;
-}
-
-/* line 59, F:/NIKOLA_PROJECTS/JavaScript_Projects/Room homepage_/scss/styles.scss */
-#content3 {
-  background: #73ffba;
-  grid-area: content3;
-}
-
-@media only screen and (max-width: 550px) {
-  /* line 67, F:/NIKOLA_PROJECTS/JavaScript_Projects/Room homepage_/scss/styles.scss */
-  .container {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "box1" "box2" "content1" "content2" "content3";
-  }
+/* line 10, F:/NIKOLA_PROJECTS/JavaScript_Projects/Room homepage_/scss/styles.scss */
+img {
+  width: 100%;
+  max-width: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */
