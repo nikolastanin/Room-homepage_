@@ -139,10 +139,22 @@ nav ul li a:hover {
 }
 
 .carousel-controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   color: red;
   position: absolute;
-  left: 20px;
-  bottom: 20px;
+  left: 0px;
+  bottom: 0px;
+}
+
+.carousel-controls button {
+  padding: 1em 2em;
+  background-color: #000;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  text-align: center;
 }
 
 .shop-btn__container {
