@@ -92,10 +92,11 @@ span{
     
     position: relative;;
     h1{
-        font-size: 2.5rem;
+        font-size: 2.7rem;
         margin-bottom: 7%;
     }
     p{
+        font-size: 0.8rem;
         margin-bottom: 7%;
     
     }
@@ -114,6 +115,9 @@ span{
          font-size: 1rem;
          letter-spacing:0.3rem;
      }
+     p{
+         font-size: 0.8rem;
+     }
 }
 .dark{
     grid-column: 6/8;
@@ -121,18 +125,20 @@ span{
 
 .carousel-controls{
     display: flex;
-    color:red;
     position: absolute;
     left:0px;
     bottom: 0px;
     button{
-        padding : 1em 2em;
+        padding : 3em 3em;
         background-color: #000;
         border: 0;
         outline: 0;
         cursor: pointer;
         text-align: center;
 
+    }
+    button:hover{
+        background-color : $very-dark-gray;
     }
 }
 .shop-btn__container{
