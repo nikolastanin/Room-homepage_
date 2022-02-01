@@ -33,6 +33,10 @@ img {
   max-height: 100%;
 }
 
+body {
+  height: 100vh;
+}
+
 nav {
   position: absolute;
   top: 20px;
@@ -80,6 +84,8 @@ nav ul li a:hover {
   display: grid;
   -ms-grid-columns: (1fr)[7];
       grid-template-columns: repeat(7, 1fr);
+  -ms-grid-rows: 70vh 30vh;
+      grid-template-rows: 70vh 30vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -127,11 +133,11 @@ nav ul li a:hover {
   margin-bottom: 7%;
 }
 
-.hero__first {
-  display: none;
+.hero__text .hero__enabled {
+  display: block;
 }
 
-.hero__third {
+.hero__text .hero__disabled {
   display: none;
 }
 
@@ -157,7 +163,6 @@ nav ul li a:hover {
 }
 
 .light__text h2 {
-  margin-bottom: 3%;
   text-transform: uppercase;
   font-size: 1rem;
   letter-spacing: 0.3rem;

@@ -127,22 +127,16 @@ span{
         margin-bottom: 7%;
     
     }
-    .hero__second{
-    //    margin-top : 100px;
-    //    padding : 0 100px;
+    .hero__enabled{
+        display: block;
     }
+    .hero__disabled{
+        display: none;
+    }
+    
 }
-.hero__first{
-     display: none;
 
-}
-.hero__second{
-    //  display:none;
-   
-}
-.hero__third{
-    display:none;
-}
+
 .light{
     grid-column: 1/3;
     grid-row: 2/3;
@@ -153,9 +147,11 @@ span{
     }
 .light__text{
     grid-column: 3/6;
+    //fix this padding for responsive 720p
      padding: 7% 5%;
      h2{
-         margin-bottom: 3%;
+         //fix this margin for responsive 720p
+        //  margin-bottom: 3%;
          text-transform: uppercase;
          font-size: 1rem;
          letter-spacing:0.3rem;
