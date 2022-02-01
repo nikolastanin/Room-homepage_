@@ -108,7 +108,6 @@ nav ul li a:hover {
   background-position: center;
   background-size: cover;
   height: 100%;
-  background-image: url("./images/desktop-image-hero-1.jpg");
 }
 
 .hero__text {
