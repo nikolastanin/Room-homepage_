@@ -36,7 +36,7 @@ img{
 }
 body{
     // background-color: green;
-    //   height: 100vh;
+       height: 100vh;
 }
 nav{
     // display: none;
@@ -88,6 +88,9 @@ span{
 .grid-container{
     display:grid;
     grid-template-columns: repeat(7,1fr);
+    // change this for smaller screen ?
+    grid-template-rows: 70vh 30vh;
+
     justify-content: center;
     align-items: center;
 
