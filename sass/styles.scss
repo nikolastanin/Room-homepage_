@@ -254,6 +254,9 @@ span{
        }
        #menu-toggle__btn{
            display: block;
+           &:hover{
+               cursor: pointer;
+           }
        }
        .show{
         display:none;

@@ -163,6 +163,8 @@ nav {
       display: none; }
     nav #menu-toggle__btn {
       display: block; }
+      nav #menu-toggle__btn:hover {
+        cursor: pointer; }
     nav .show {
       display: none; }
     nav .hide {
