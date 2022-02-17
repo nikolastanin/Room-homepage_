@@ -39,6 +39,7 @@ body{
        height: 100vh;
 }
 nav{
+   
     // display: none;
     position: absolute;
    top:20px;
@@ -54,11 +55,13 @@ span{
 }
 
    ul{
-       
+       display: flex;
+      
        li{
-            display:inline-block;
+            // display:inline-block;
             margin-left: 30px;
-         
+            list-style: none;
+            transition: all 0.4s ease-in;
 
             a{
                 text-decoration: none;
@@ -83,6 +86,9 @@ span{
           
        }
    }
+   #menu-toggle__btn{
+    display:none;
+}
 }
 
 .grid-container{
@@ -174,7 +180,7 @@ span{
     left:0px;
     bottom: 0px;
     button{
-        padding : 3em 3em;
+        padding : 3em;
         background-color: #000;
         border: 0;
         outline: 0;
@@ -202,3 +208,44 @@ span{
 
     
 }
+
+//MEDIA QUIERIES
+
+@media screen and (min-width: 80em) {
+    body {
+      background-color: blue;
+    }
+  }
+
+  @media screen and (max-width:60em) {
+    body {
+      background-color: red;
+    }
+  }
+
+  @media screen and (max-width:50em) {
+    body {
+      background-color: green;
+    }
+    .grid-container{
+        display: block;
+    }
+    nav{
+        // transition: all 0.4s ease-in;
+        z-index: 1000;
+        // margin-bottom: 600px;
+        // background-color: red;
+        // margin-bottom: 1000px;
+        width: 100%;
+        left:0;
+        // top:0;
+        justify-content: space-around;
+       ul{
+           display: none;
+    
+       }
+       #menu-toggle__btn{
+           display: block;
+       }
+    }
+  }
