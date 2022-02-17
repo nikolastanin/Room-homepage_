@@ -13,6 +13,7 @@ p {
   margin: 0;
   line-height: 1.5rem;
   font-family: 'Spartan', sans-serif;
+  font-size: 1vw;
 }
 
 h1, h2, h3 {
@@ -79,6 +80,7 @@ nav ul li a {
   transition: font-size 0.2s;
   -webkit-transition: border-bottom 0.2s ease-in-out;
   transition: border-bottom 0.2s ease-in-out;
+  font-size: 1rem;
 }
 
 nav ul li a:hover {
@@ -131,17 +133,18 @@ nav #menu-toggle__btn {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
-  padding: 20%;
+  padding: 10%;
   position: relative;
 }
 
 .hero__text h1 {
   font-size: 2.7rem;
   margin-bottom: 7%;
+  line-height: 3rem;
 }
 
 .hero__text p {
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin-bottom: 7%;
 }
 
@@ -227,6 +230,7 @@ nav #menu-toggle__btn {
   margin-right: 40px;
   -webkit-transition: font-size 0.2s;
   transition: font-size 0.2s;
+  font-size: 1rem;
 }
 
 .shop-btn__container .shop-text:hover {
@@ -234,24 +238,12 @@ nav #menu-toggle__btn {
   font-size: 1.1rem;
 }
 
-@media screen and (min-width: 80em) {
-  body {
-    background-color: blue;
-  }
-}
-
-@media screen and (max-width: 60em) {
-  body {
-    background-color: red;
-  }
-}
-
 @media screen and (max-width: 50em) {
-  body {
-    background-color: green;
-  }
   .grid-container {
     display: block;
+  }
+  header {
+    background-color: #000;
   }
   nav {
     z-index: 1000;
@@ -265,6 +257,22 @@ nav #menu-toggle__btn {
   }
   nav #menu-toggle__btn {
     display: block;
+  }
+  nav .show {
+    display: none;
+  }
+  nav .hide {
+    display: block;
+  }
+  .grid-item.hero {
+    height: 500px;
+  }
+  .hero__text {
+    padding: 10%;
+    margin-bottom: 100px;
+  }
+  .carousel-controls {
+    bottom: -100px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

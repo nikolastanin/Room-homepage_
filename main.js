@@ -53,18 +53,38 @@ const prevItem = () =>{
 //Menu toggle
 const menuToggle = (e) =>{
   let icon = e.target;
-    console.log(icon.className);
-  if(menuList.style.display==""){
-    menuList.style.display="block";
-    menuBtn.src ="images/icons/icon-close.svg";
-    menu.style.backgroundColor="rgba(0, 0, 0, 0.8)";
-    menu.style.transition ="all 0.5s";
-  }
-  else{
-         menuList.style.display="";
-         menuBtn.src ="images/icons/icon-hamburger.svg";
-         menu.style.backgroundColor="";
-   }
+  //   console.log(icon.className);
+  // if(menuList.style.display==""){
+  //   menuList.style.display="block";
+  //   menuBtn.src ="images/icons/icon-close.svg";
+  //   menu.style.backgroundColor="rgba(0, 0, 0, 0.8)";
+  //   menu.style.transition ="all 0.5s";
+  // }
+  // else{
+  //        menuList.style.display="flex";
+  //        menuList.style.display="none";
+  //        menuBtn.src ="images/icons/icon-hamburger.svg";
+  //        menu.style.backgroundColor="";
+  //  }
+if(menuList.className =="menu show"){
+menuList.className = "menu show hide";
+menuBtn.src ="images/icons/icon-close.svg";
+   menu.style.backgroundColor="rgba(0, 0, 0, 0.8)";
+  menu.style.transition ="all 0.5s";
+  
+}
+else{
+  menuList.className ="menu show";
+  menuBtn.src ="images/icons/icon-hamburger.svg";
+          menu.style.backgroundColor="";
+}
+
+ 
+
+
+  //new
+   
+  
 }
 
 //event listeners for buttons
